@@ -1,0 +1,31 @@
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row> </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item class="header">
+          <ion-button fill="clear" slot="start" color="dark">
+            <ion-icon name="arrow-back-sharp" slot="icon-only"></ion-icon
+          ></ion-button>
+
+          <ion-label>Colleseum, Rome</ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="opencard">
+    <ion-card *ngFor="let item of [1,2,3]">
+      <img src="assets/img/image 2.png" />
+      <div class="title">
+        <p>Collesuem</p>
+        <span>Rome</span>
+      </div>
+
+      <div class="rating">
+        <ion-icon name="star"></ion-icon> <span>4.7 /5</span>
+      </div>
+      <ion-icon name="play-circle-outline" class="playbtn"></ion-icon>
+    </ion-card>
+  </div>
+</ion-content>

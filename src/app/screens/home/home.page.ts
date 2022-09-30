@@ -63,6 +63,11 @@ export class HomePage {
       name: 'Collesuem',
       country: 'Rome',
     },
+    {
+      img: 'assets/img/image 5.png',
+      name: 'Mount Bromo',
+      country: 'Indonesia',
+    },
   ];
 
   constructor() {}

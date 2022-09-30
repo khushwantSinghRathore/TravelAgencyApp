@@ -14,6 +14,13 @@ const routes: Routes = [
           import('../screens/home/home.module').then((m) => m.HomePageModule),
       },
       {
+        path: 'compass',
+        loadChildren: () =>
+          import('../screens/compass/compass.module').then(
+            (m) => m.CompassPageModule
+          ),
+      },
+      {
         path: '',
         redirectTo: '/tabnav/home',
         pathMatch: 'full',
