@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 
 @Component({
@@ -70,5 +71,9 @@ export class HomePage {
     },
   ];
 
-  constructor() {}
+  constructor(private router: Router) {}
+
+  openBooking() {
+    this.router.navigate(['booking']);
+  }
 }

@@ -44,7 +44,11 @@
     </ion-row>
     <ion-row>
       <ion-col class="colcat">
-        <ion-card *ngFor="let item of citys" class="citycard">
+        <ion-card
+          *ngFor="let item of citys"
+          class="citycard"
+          (click)="openBooking()"
+        >
           <ion-icon name="heart-outline" class="iconfav"></ion-icon>
           <img [src]="item.img" />
           <p class="cardhead">{{ item.name }}</p>

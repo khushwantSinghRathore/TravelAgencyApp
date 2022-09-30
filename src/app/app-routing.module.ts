@@ -21,6 +21,10 @@ const routes: Routes = [
     path: 'compass',
     loadChildren: () => import('./screens/compass/compass.module').then( m => m.CompassPageModule)
   },
+  {
+    path: 'booking',
+    loadChildren: () => import('./screens/booking/booking.module').then( m => m.BookingPageModule)
+  },
 ];
 
 @NgModule({

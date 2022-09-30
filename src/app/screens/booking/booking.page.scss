@@ -1,0 +1,17 @@
+.bookbtn {
+  width: 80vw;
+  margin-left: 10vw;
+  position: absolute;
+  bottom: 3vh;
+}
+
+.headcard {
+  ion-card {
+    margin: 0px 2vw;
+    img {
+      min-height: 473px;
+      filter: drop-shadow(0px 9px 4px rgba(171, 150, 140, 0.1));
+      border-radius: 20px;
+    }
+  }
+}
