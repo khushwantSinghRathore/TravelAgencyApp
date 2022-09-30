@@ -25,8 +25,27 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
 
 ion-app {
   --ion-font-family: "Inter", sans-serif !important;
   font-family: "Inter", sans-serif !important;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 8px;
+}
+
+ion-segmenyt-button.segbtn:host {
+  height: 24px !important;
+}
+
+ion-segment-button.segbtn::part(native) {
+  height: 24px !important;
+  max-height: 24px !important;
+  min-height: 20px !important;
+}
+ion-segment-button.segbtn::part(indicator) {
+  bottom: 25px !important;
 }
