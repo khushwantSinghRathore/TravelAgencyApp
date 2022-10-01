@@ -20,7 +20,13 @@
           </ion-item>
 
           <div class="bottomimgcard">
-            <img [src]="item.img" *ngFor="let item of imgs" class="thumb" />
+            <div
+              *ngFor="let item of imgs; let i = index"
+              style="display: inline-block; position: relative"
+            >
+              <img [src]="item.img" class="thumb" />
+              <div class="centered" *ngIf="i == 4">+5</div>
+            </div>
           </div>
         </ion-card>
       </ion-col>
