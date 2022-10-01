@@ -138,10 +138,14 @@ ion-segment-button.md::part(native) {
     position: absolute;
     top: 10px;
     background: white;
-    right: 10px;
+    right: 8px;
     z-index: 1;
     border-radius: 50%;
-    font-size: 10px;
-    padding: 2px;
+    font-size: 14px;
+    padding: 4px;
   }
+}
+
+ion-grid {
+  margin-bottom: 20vh;
 }

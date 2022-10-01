@@ -26,10 +26,11 @@ ion-item.header::part(native) {
 
 .opencard {
   position: absolute;
-  bottom: 12vh;
+  bottom: 8vh;
   width: 100vw;
   white-space: nowrap;
   overflow-x: scroll;
+  padding-left: 5vw;
 
   ion-card {
     background: #ffffff;

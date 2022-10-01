@@ -3,36 +3,56 @@
     <ion-row>
       <ion-col class="headcard">
         <ion-card>
-          <img src="assets/img/image 2.png" />
+          <img src="assets/img/image 2.png" class="backgimg" />
+          <ion-item lines="none" class="topheader">
+            <ion-icon
+              name="arrow-back-sharp"
+              slot="start"
+              style="margin-left: -2vw"
+              (click)="backHome()"
+            ></ion-icon>
+            <ion-icon
+              name="log-out-outline"
+              slot="end"
+              style="transform: rotate(270deg)"
+            ></ion-icon>
+            <ion-icon name="heart-outline" slot="end"></ion-icon>
+          </ion-item>
+
+          <div class="bottomimgcard">
+            <img [src]="item.img" *ngFor="let item of imgs" class="thumb" />
+          </div>
         </ion-card>
       </ion-col>
     </ion-row>
-    <ion-row>
-      <ion-col size="8">
+    <ion-row class="headtext">
+      <ion-col size="8" class="ion-text-start">
         <p>Colleseum</p>
         <span>Rome</span>
       </ion-col>
-      <ion-col size="4">
+      <ion-col size="4" class="ion-text-end">
         <p>$20</p>
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col size="12">
+      <ion-col size="12" class="iconcard">
         <ion-icon name="location-outline"></ion-icon>
-        <span>Piazza del Colloseo 1, Rome</span>
+        <p>Piazza del Colloseo 1, Rome</p>
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col size="1">
+      <ion-col class="iconcard">
         <ion-icon name="time-outline"></ion-icon>
-      </ion-col>
-      <ion-col>
-        <span>OPEN</span>
-        <span>09:00 AM</span>
+        <p class="time">
+          OPEN <br />
+          09:00 AM
+        </p>
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col> <img src="assets/img/image 17.png" /> </ion-col>
+      <ion-col>
+        <img src="assets/img/image 17.png" class="map" />
+      </ion-col>
     </ion-row>
   </ion-grid>
   <ion-button shape="round" expand="block" color="blue" class="bookbtn">
