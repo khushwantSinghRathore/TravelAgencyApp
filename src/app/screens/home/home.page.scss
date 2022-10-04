@@ -1,0 +1,151 @@
+.lightheader {
+  font-size: x-large;
+  font-weight: 200;
+  margin: 0%;
+  padding-left: 5vw;
+}
+
+.bolderheader {
+  font-size: xx-large;
+  font-weight: 700;
+  margin: 0%;
+  padding-left: 5vw;
+}
+
+.propic {
+  padding-right: 5vw;
+}
+
+.header {
+  margin-top: 5vh;
+}
+
+.customsearchitem {
+  --background: rgba(0, 0, 0, 0.05);
+  --border-radius: 25px;
+  width: 85vw;
+  margin: auto;
+  margin-top: 5%;
+
+  ion-icon {
+    color: var(--ion-color-medium);
+  }
+}
+
+ion-item.customsearchitem::part(native) {
+  height: 65px;
+}
+
+.head3 {
+  margin-top: 5vh;
+  padding-left: 5vw;
+  font-size: large;
+  font-weight: 700;
+}
+
+.head4 {
+  margin-top: 3vh;
+  padding-left: 5vw;
+  font-size: large;
+  font-weight: 700;
+}
+
+.segments {
+  margin-left: 3vw;
+  height: 30px;
+}
+
+.segbtn {
+  ion-label {
+    margin: 0px;
+    font-size: x-small;
+    text-transform: capitalize;
+  }
+  margin: 0px 2vw;
+}
+
+ion-segment-button.md::part(native) {
+  padding: 0px;
+}
+
+.categories {
+  display: inline-block;
+  margin: 0px 2vw;
+  ion-avatar {
+    width: 68px;
+    height: 68px;
+    background: #f4f4f4;
+  }
+
+  img {
+    margin-top: 16px;
+    width: 36px;
+    height: 36px;
+  }
+
+  p {
+    font-size: xx-small;
+    text-align: center;
+    font-weight: 500;
+  }
+}
+
+.colcat {
+  margin-top: 2vh;
+  white-space: nowrap;
+  overflow-x: scroll;
+  padding-left: 3vw;
+}
+
+.citycard {
+  width: 120px;
+  min-height: 177px;
+  display: inline-block;
+  margin: 0px 4.5px;
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 15px;
+  box-sizing: border-box;
+
+  img {
+    padding: 3px;
+    filter: drop-shadow(0px 9px 4px rgba(171, 150, 140, 0.1));
+    border-radius: 15px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .cardhead {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 8px;
+    margin: 0px;
+    color: black;
+  }
+
+  .cardsubhead {
+    margin: 0px;
+    font-size: 8px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0px 8px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+  }
+
+  .iconfav {
+    position: absolute;
+    top: 10px;
+    background: white;
+    right: 8px;
+    z-index: 1;
+    border-radius: 50%;
+    font-size: 14px;
+    padding: 4px;
+  }
+}
+
+ion-grid {
+  margin-bottom: 20vh;
+}

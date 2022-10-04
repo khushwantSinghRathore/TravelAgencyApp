@@ -1,0 +1,79 @@
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row class="ion-align-items-center header">
+      <ion-col size="9" class="ion-text-start">
+        <p class="lightheader">Where do</p>
+        <p class="bolderheader">you want to go?</p>
+      </ion-col>
+      <ion-col size="3" class="ion-text-end">
+        <img src="assets/img/Group 2.png" class="propic" />
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item lines="none" mode="ios" class="customsearchitem">
+          <ion-icon name="search" slot="start"></ion-icon>
+          <ion-input type="text" placeholder="Discover city"></ion-input>
+          <ion-icon name="options" slot="end"></ion-icon>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <h2 class="head3">Explore Cities</h2>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <ion-segment
+          color="dark"
+          value="All"
+          [scrollable]="true"
+          mode="md"
+          class="segments"
+        >
+          <ion-segment-button
+            *ngFor="let s of options"
+            [value]="s.name"
+            class="segbtn"
+          >
+            <ion-label>{{s.name}}</ion-label>
+          </ion-segment-button>
+        </ion-segment>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="colcat">
+        <ion-card
+          *ngFor="let item of citys"
+          class="citycard"
+          (click)="openBooking()"
+        >
+          <ion-icon name="heart-outline" class="iconfav"></ion-icon>
+          <img [src]="item.img" />
+          <p class="cardhead">{{ item.name }}</p>
+          <p class="cardsubhead">
+            <ion-icon name="location-outline"></ion-icon>
+            <span>{{ item.country }}</span>
+          </p>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <h2 class="head4">Categories</h2>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="colcat">
+        <div *ngFor="let item of cat" class="categories">
+          <ion-avatar class="ion-text-center">
+            <img [src]="item.img" />
+          </ion-avatar>
+
+          <p>{{item.name}}</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
