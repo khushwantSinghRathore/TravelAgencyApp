@@ -2,7 +2,7 @@
 
 Figma mobile app designed by [TECH CROWD](https://www.figma.com/@techcrowd) on Figma
 
-This is UI implementation of the mobile design in Ionic 6 Angular 14
+This is the UI implementation of the mobile design in Ionic 6 Angular 14
 
 ![img](./cover.png)
 
